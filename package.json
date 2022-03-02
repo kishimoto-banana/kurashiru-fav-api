@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "@types/google-apps-script": "^1.0.45"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3"
   }
 }
