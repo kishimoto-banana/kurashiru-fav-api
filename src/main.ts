@@ -22,7 +22,7 @@ const fetchRecipes = (): string[][] => {
   return data;
 };
 
-const array2Obj = (data: string[]): Recipe => {
+export const array2Obj = (data: string[]): Recipe => {
   const [url, title, imageUrl] = data;
   return { url, title, imageUrl };
 };
