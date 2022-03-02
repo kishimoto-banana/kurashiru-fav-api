@@ -12,7 +12,8 @@ type Recipes = Recipe[];
 const doGet = (e) => {
   const rows = fetchRecipes();
   const recipes = rows.map((row) => array2Obj(row));
-  return encode(recipes);
+  const reversedRecipes = recipes.reverse(); // 古い順になっているので新しい順にする
+  return encode(reversedRecipes);
 };
 
 const fetchRecipes = (): string[][] => {
